@@ -1,0 +1,72 @@
+/* Reset some default styles */
+body, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set up basic styles for the body */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* Style the container for the grid */
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 80%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Style for each card */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+}
+
+.card-image {
+  width: 150px;
+  height: 150px;
+  background-color: #ccc;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.card h2 {
+  margin: 15px 0;
+  font-size: 1.25rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,48 @@
+/* Styling only */
+body {
+  margin: 0;
+}
+
+.wrapper {
+  display: grid;
+  background-color: #333333;
+  color: #444;
+  padding: 20px;
+  height: 90vh;
+  gap: 10px;
+}
+
+.item {
+  background-color: #3092d7;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item.a {
+  grid-column: span 3; 
+}
+
+.item.b {
+  grid-row: span 2; 
+}
+
+.item.c {
+  grid-column: 2; 
+}
+
+.item.d {
+  grid-column: 3;
+}
+
+.item.e {
+  grid-column: 2 / span 2; 
+}
+
+.item.f {
+  grid-column: span 3; 
+}
